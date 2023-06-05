@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フローリストひまわり</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/destyle.css">
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- jq -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+
+    <!-- inview -->
+    <script src="js/jquery.inview.min.js"></script>
+
+    <!-- モーダル -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/modal-video@2.4.8/css/modal-video.min.css">
+    <script src="https://unpkg.com/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
+</head>
+
+<body>
+    <div class="mouse-stalker">
+        <div></div>
+    </div>
+    <!-- <div id="loading">
+        <div class="load_anime">
+            <img src="img/load_anime_logo.png">
+        </div>
+    </div> -->
+    <div class="wrapper">
+        <header>
+            <div class="menu_area">
+                <div class="top_menu">
+                    <div class="open_menu">
+                        <div class="menu_btn">
+                            <p class="img">
+                                <img src="img/menu_btn.png">
+                            </p>
+                            <p>
+                                menu
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hd_logo">
+                        <div class="logo_img">
+                            <p>
+                                <a href="index.html"><img src="img/menu_logo.png"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bot_menu">
+                    <div class="sns_btn_box">
+                        <div class="line_btn sns_btn">
+                            <p>
+                                <a href="https://page.line.me/?accountId=952eshiw" target="_blank">
+                                    <img src="img/menu_line_btn.png" alt="ラインのボタン">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="insta_btn sns_btn">
+                            <p>
+                                <a href="https://www.instagram.com/ashiya_himawari_to_tentoumusi/?hl=ja" target="_blank">
+                                    <img src="img/menu_insta_btn.png" alt="インスタのボタン">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="faseb_btn sns_btn">
+                            <p>
+                                <a href="https://www.facebook.com/1187himawari1187" target="_blank">
+                                    <img src="img/menu_faseb_btn.png" alt="フェイスブックのボタン">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://himawari87.com/contact/" target="_blank">
+                        <div class="contact_btn">
+                            <p>
+                                お問合せ
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="go_top">
+                            <p>
+                                page top
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <!-- メニュー入れる -->
+            <nav class="global-menu">
+                <div class="hbg_menu_area">
+                    <div class="nav_menu_area">
+                        <div class="ttl_box">
+                            <h2 class="ttl">
+                                トップページ
+                            </h2>
+                            <p>
+                                <a href="index.html">
+                                    Top page
+                                </a>
+                            </p>
+                        </div>
+                        <div class="ttl_box">
+                            <h2 class="ttl">
+                                お取り扱い商品
+                            </h2>
+                            <p>
+                                <a href="product.html">
+                                    Item line up
+                                </a>
+                            </p>
+                        </div>
+                        <div class="ttl_box">
+                            <h2 class="ttl">
+                                雑貨・小物
+                            </h2>
+                            <p>
+                                <a href="service.html">
+                                    Other services
+                                </a>
+                            </p>
+                        </div>
+                        
+                        <div class="ttl_box">
+                            <h2 class="ttl">
+                                イベント・スクール
+                            </h2>
+                            <p>
+                                <a href="service.html">
+                                    Event・School
+                                </a>
+                            </p>
+                        </div>
+                        <div class="ttl_box">
+                            <h2 class="ttl">
+                                ミューマ酒店
+                            </h2>
+                            <p>
+                                <a href="miyuma.html">
+                                    MiyuMA Liquor store
+                                </a>
+                            </p>
+                        </div>
+                        <div class="ttl_box">
+                            <h2 class="ttl">
+                                写真
+                            </h2>
+                            <p>
+                                <a href="#gall">
+                                    Gallery
+                                </a>
+                            </p>
+                        </div>
+                        <div class="ttl_box">
+                            <h2 class="ttl">
+                                オーナー
+                            </h2>
+                            <p>
+                                <a href="profile.html">
+                                    Owner
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center_nav_area">
+                        <div class="sns_nav_area">
+                            <div class="sns_box">
+                                <a href="https://page.line.me/?accountId=952eshiw" target="_blank">
+                                    <div class="icon">
+                                        <p>
+                                            <img src="img/nav_sns_icon_1.png">
+                                        </p>
+                                    </div>
+                                    <div class="sns_name">
+                                        <p>
+                                            LINE@
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sns_box">
+                                <a href="https://www.instagram.com/ashiya_himawari_to_tentoumusi/?hl=ja" target="_blank">
+                                    <div class="icon">
+                                        <p>
+                                            <img src="img/nav_sns_icon_2.png">
+                                        </p>
+                                    </div>
+                                    <div class="sns_name">
+                                        <p>
+                                            Instagram
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sns_box">
+                                <a href="https://www.facebook.com/1187himawari1187" target="_blank">
+                                    <div class="icon">
+                                        <p>
+                                            <img src="img/nav_sns_icon_3.png">
+                                        </p>
+                                    </div>
+                                    <div class="sns_name">
+                                        <p>
+                                            Facebook
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sns_box">
+                                <a href="https://www.youtube.com/channel/UCUSm39SoXdb5iiTqqntRPXA" target="_blank">
+                                    <div class="icon">
+                                        <p>
+                                            <img src="img/nav_sns_icon_4.png">
+                                        </p>
+                                    </div>
+                                    <div class="sns_name">
+                                        <p>
+                                            YouTube
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="link_nav_area">
+                            <a href="https://miyuma87.thebase.in/" target="_blank">
+                                <div class="info_btn online_btn">
+                                    <div class="icon index_bot">
+                                        <p>
+                                            <img src="img/nav_shop_icon.png">
+                                        </p>
+                                    </div>
+                                    <div class="btn_txt_box index_bot">
+                                        <p class="">
+                                            オンラインショップ
+                                        </p>
+                                        <p class="en">
+                                            Online Shop
+                                        </p>
+                                    </div>
+                                    <div class="yaji index_bot">
+    
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://miyuma87.thebase.in/" target="_blank">
+                                <div class="info_btn contact_btn">
+                                    <div class="icon index_bot">
+                                        <p>
+                                            <img src="img/nav_mail_icon.png">
+                                        </p>
+                                    </div>
+                                    <div class="btn_txt_box index_bot">
+                                        <p class="">
+                                            お問合せ
+                                        </p>
+                                        <p class="en">
+                                            Contact
+                                        </p>
+                                    </div>
+                                    <div class="yaji index_bot">
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tel_mail">
+                            <p class="tel">
+                                TEL:090-1952-4384
+                            </p>
+                            <p class="mail">
+                                <a href="">
+                                    florist87himawari@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="info_acc">
+                            <p class="menu">
+                                <a href="#info">
+                                    info
+                                </a>
+                            </p>
+                            <p class="menu">
+                                <a href="https://www.google.com/maps?ll=34.752844,135.341176&z=13&t=m&hl=ja&gl=JP&mapclient=embed&cid=3910401158050831741">
+                                    access
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_img">
+                    <p>
+                        <img src="img/menu_light_img.png">
+                    </p>
+                </div>
+            </nav>
+        </header>
+        <div id="luxy">
+            <main>
+                <div class="kaso_page" id="services">
+                    <!-- MV -->
+                    <div class="heading">
+                        <div class="ttl_box product_ttl fadeUp-anime">
+                            <h2 class="ttl">
+                                その他サービス
+                            </h2>
+                            <p>
+                                Other services
+                            </p>
+                        </div>
+                        <div class="rbn_white fadeUp-anime">
+                            <p>
+                                <img src="img/rbn_white.png">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services_content img_content">
+                        <div class="content_area" id="accessory">
+                            <div class="ttl_box content_ttl fadeUp-anime">
+                                <h2 class="ttl">
+                                    雑貨・小物
+                                </h2>
+                                <p>
+                                    Accessory
+                                </p>
+                            </div>
+                            <div class="img_box fadeUp-anime">
+                                <p>
+                                    <img src="img/services_accessory_1.png">
+                                </p>
+                                <p>
+                                    <img src="img/services_accessory_2.png">
+                                </p>
+                                <p>
+                                    <img src="img/services_accessory_3.png">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secondary_content img_four fadeUp-anime">
+                        <div class="secondary_area">
+                            <div class="secondary_txt_area">
+                                <div class="txt_box">
+                                    <h3 class="name">
+                                        <a href="service.html">
+                                            雑貨・小物
+                                        </a>
+                                    </h3>
+                                    <p class="txt">
+                                        オーナー自ら、お花にちなんだアクセサリーや、インテリア、小物雑貨など全国旅をしながら見つけてきます。見ているだけで笑顔になれるようなお品を取り揃えております。
+                                    </p>
+                                    <p class="txt">
+                                        小物はオンラインショップからもお買い求めいただけます。
+                                    </p>
+                                </div>
+                                <a href="https://miyuma87.thebase.in/" target="_blank">
+                                    <div class="secondary_btn">
+                                        <div class="icon ">
+                                            <p>
+                                                <img src="img/secondary_online_.png">
+                                            </p>
+                                        </div>
+                                        <div class="btn_txt_box">
+                                            <p class="en">
+                                                Online Shop
+                                            </p>
+                                        </div>
+                                        <div class="yaji ">
+        
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="img_area">
+                                <div class="img_top img_box">
+                                    <p class="img">
+                                        <img src="img/accessory_img_1.png">
+                                    </p>
+                                    <p class="img">
+                                        <img src="img/accessory_img_2.png">
+                                    </p>
+                                </div>
+                                <div class="img_bot img_box">
+                                    <p class="img">
+                                        <img src="img/accessory_img_3.png">
+                                    </p>
+                                    <p class="img">
+                                        <img src="img/accessory_img_4.png">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service_obj_1 objct">
+                            <p>
+                                <img src="img/services_obj_1.png">
+                            </p>
+                        </div>
+                        <div class="service_obj_2 objct">
+                            <p>
+                                <img src="img/services_obj_2.png">
+                            </p>
+                        </div>
+                    </div>
+                    <div  id="event_scholl" class="ttl_box content_ttl fadeUp-anime">
+                        <h2 class="ttl">
+                            イベント・スクール
+                        </h2>
+                        <p>
+                            Event・School
+                        </p>
+                    </div>
+                    <div class="secondary_content img_two fadeUp-anime">
+                        <div class="secondary_area">
+                            <div class="secondary_txt_area">
+                                <div class="txt_box">
+                                    <h3 class="name">
+                                        <a href="service.html">
+                                            イベント・スクール
+                                        </a>
+                                    </h3>
+                                    <p class="txt">
+                                        お花を通じてチャリティーコラボレッスンをはじめ、お客様でもあるアーティストや和菓子職人さんなどあらゆるジャンルのスペシャリストとのフラワーコラボイベントやツアー等。
+                                            お花を通じて沢山の芸術と笑顔の調和が生まれだすイベントを目指しています。
+                                    </p>
+                                    <p class="txt">
+                                        イベント情報はSNSにて随時配信しております。
+                                    </p>
+                                </div>
+                                <siv class="btn_box">
+                                    <div class="sns_box">
+                                        <a href="https://www.instagram.com/ashiya_himawari_to_tentoumusi/?hl=ja" target="_blank">
+                                            <div class="icon">
+                                                <p>
+                                                    <img src="img/nav_sns_icon_2.png">
+                                                </p>
+                                            </div>
+                                            <div class="sns_name">
+                                                <p>
+                                                    Instagram
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="sns_box">
+                                        <a href="https://www.facebook.com/1187himawari1187" target="_blank">
+                                            <div class="icon">
+                                                <p>
+                                                    <img src="img/nav_sns_icon_3.png">
+                                                </p>
+                                            </div>
+                                            <div class="sns_name">
+                                                <p>
+                                                    Facebook
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </siv>
+                            </div>
+                            <div class="img_area">
+                                <div class="left_img">
+                                    <p>
+                                        <img src="img/event_img_1.png">
+                                    </p>
+                                </div>
+                                <div class="right_img">
+                                    <p>
+                                        <img src="img/event_img_2.png">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service_obj_1 objct">
+                            <p>
+                                <img src="img/services_obj_3.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>                
+                <!-- インフォ -->
+                <div class="info" id="info">
+                    <div class="info_bg">
+                        <div class="info_content_area">
+                            <div class="txt fadeUp-anime">
+                                <p>アトリエは、オーナーひとりで営んでいるため不定休です。
+                                    <br>ご来店される際は事前にお電話にてご予約をお願いいたします。
+                                </p>
+                                <p>
+                                    お花はもちろんの事お花に因んだ小物雑貨も沢山。
+                                    <br>オンラインショップからも購入頂けます。
+                                </p>     
+                                <p>
+                                    １本の花からディスプレイやフラワーショーまで、
+                                    <br>花は豊かに表現し私たちの心を満たしてくれます。
+                                    <br>どうぞお気軽にお尋ねくださいませ。
+                                </p>
+                            </div>
+                            <div class="info_btn_area fadeUp-anime">
+                                <a href="https://miyuma87.thebase.in/" target="_blank">
+                                    <div class="info_btn online_btn">
+                                        <div class="icon index_bot">
+                                            <p>
+                                                <img src="img/info_shop_icon.png">
+                                            </p>
+                                        </div>
+                                        <div class="btn_txt_box index_bot">
+                                            <p class="en">
+                                                Online Shop
+                                            </p>
+                                            <p class="">
+                                                オンラインショップ
+                                            </p>
+                                        </div>
+                                        <div class="yaji index_bot">
+        
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="contact.html">
+                                    <div class="info_btn contact_btn">
+                                        <div class="icon index_bot">
+                                            <p>
+                                                <img src="img/info_contact_icon.png">
+                                            </p>
+                                        </div>
+                                        <div class="btn_txt_box index_bot">
+                                            <p class="en">
+                                                Contact
+                                            </p>
+                                            <p class="">
+                                                お問合せ
+                                            </p>
+                                        </div>
+                                        <div class="yaji index_bot">
+                                            
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 店舗 -->
+                <div class="shop_add">
+                    <div class="map">
+                        <p>
+                            <a href="https://www.google.com/maps/place/%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A8+%E3%81%B2%E3%81%BE%E3%82%8F%E3%82%8A%E3%81%A8%E3%81%A6%E3%82%93%E3%81%A8%E3%81%86%E8%99%AB/@34.7365212,135.3076899,16z/data=!4m6!3m5!1s0x6000f3f05d4889c9:0x3644892292e55d7d!8m2!3d34.7373845!4d135.3119835!16s%2Fg%2F11h_y0fb_v?hl=ja" target="_blank">
+                                <img src="img/map_img.jpg">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="bg_box js-animate">
+                        <div class="bg_left">
+                            <p>
+                                <img src="img/obj_left_flower.png">
+                            </p>
+                        </div>
+                        <div class="bg_right">
+                            <p>
+                                <img src="img/obj_right_flower.png">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="add_area">
+                        <div class="img">
+                            <p>
+                                <img src="img/info_Store_img.png">
+                            </p>
+                        </div>
+                        <div class="add_box">
+                            <div class="name">
+                                <p>
+                                    アトリエひまわりとてんとう虫
+                                </p>
+                            </div>
+                            <div class="detail">
+                                <p>
+                                    〒659-0016 兵庫県芦屋市親王塚町10-1
+                                </p>
+                                <p>
+                                    TEL:090-1952-4384
+                                </p>
+                                <p>
+                                    FAX:0797-97-1614
+                                </p>
+                                <p>
+                                    florist87himawari@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="footer_area">
+                    <div class="logo">
+                        <p>
+                            <img src="img/footer_logo.png">
+                        </p>
+                    </div>
+                    <div class="menu_area">
+                        <p class="menu">
+                            <a href="#">
+                                home
+                            </a>
+                        </p>
+                        <p class="menu">
+                            <a href="product.html">
+                                product
+                            </a>
+                        </p>
+                        <p class="menu">
+                            <a href="service.html">
+                                service
+                            </a>
+                        </p>
+                        <p class="menu">
+                            <a href="miyuma.html">
+                                MiyuMA
+                            </a>
+                        </p>
+                        <p class="menu">
+                            <a href="profile.html.html">
+                                owner
+                            </a>
+                        </p>
+                    </div>
+                    <div class="sns_icon_area">
+                        <div class="sns_icon">
+                            <p>
+                                <img src="img/footer_sns_icon_1.png">
+                            </p>
+                        </div>
+                        <div class="sns_icon">
+                            <p>
+                                <img src="img/footer_sns_icon_2.png">
+                            </p>
+                        </div>
+                        <div class="sns_icon">
+                            <p>
+                                <img src="img/footer_sns_icon_3.png">
+                            </p>
+                        </div>
+                        <div class="sns_icon">
+                            <p>
+                                <img src="img/footer_sns_icon_4.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copylight">
+                    <p>
+                        ©︎frooolist.himawari/2022
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <!-- フッター終わり -->
+    </div>
+
+    <script src="js/luxy.js" charset="utf-8"></script>
+    <script charset="utf-8">luxy.init();</script>
+</body>
+
+</html>
